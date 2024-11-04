@@ -18,7 +18,7 @@ st.markdown("""
     </script>
 """, unsafe_allow_html=True)
 
-st.query_params
+st.write(st.query_params)
 
 st.header('Northern Ireland Census 2021: Religious mix by ward')
 
