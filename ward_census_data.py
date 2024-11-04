@@ -23,6 +23,8 @@ def load_ward_deltas():
     data = gpd.read_file(DELTAS_PATH)
     return data
 
+st.subheader("By age band")
+
 # Explain the source of the data and link to it
 st.markdown("This map visualises the religious mix of Northern Ireland's population by age and ward. "
             "Wards are coloured by the percentage of the population in each age band who self-declared as "
@@ -69,6 +71,7 @@ r = pdk.Deck(layers=[rel_layer], initial_view_state=view_state, tooltip=tooltip1
 # render the map
 st.pydeck_chart(r)
 
+st.subheader("Change since 2011")
 
 # Explain the source of the data and link to it
 st.markdown("The bottom map visualises the change in religious categories between the 2011 and 2021 censuses. "
