@@ -12,7 +12,7 @@ st.set_page_config(page_title='Census data by ward 2021',
 
 st.header('Northern Ireland Census 2021: Religious mix by ward')
 
-st.markdown("NB: best viewed on a large screen.")
+st.markdown("NB: best viewed on a large screen. Maps can be made fullscreen by clicking on the icon just outside the top right corner.")
 
 st.divider()
 
