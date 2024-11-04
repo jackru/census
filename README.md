@@ -1,4 +1,4 @@
-# An Interactive Map displaying PfIE's FOI findings
+# An Interactive Map displaying NI Census data
 
-Find your school and see which religious organisations visit.
+NI Census data on religion from the 2021 census.
 
