@@ -14,6 +14,8 @@ st.header('Northern Ireland Census 2021: Religious mix by ward')
 
 st.markdown("NB: best viewed on a large screen.")
 
+st.divider()
+
 @st.cache_data
 def load_ward_data():
     data = gpd.read_file(GEOJSON_PATH)
