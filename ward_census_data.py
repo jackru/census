@@ -71,6 +71,8 @@ r = pdk.Deck(layers=[rel_layer], initial_view_state=view_state, tooltip=tooltip1
 # render the map
 st.pydeck_chart(r)
 
+st.divider()
+
 st.subheader("Change since 2011")
 
 # Explain the source of the data and link to it
