@@ -12,6 +12,8 @@ st.set_page_config(page_title='Census data by ward 2021',
 
 st.header('Northern Ireland Census 2021: Religious mix by ward')
 
+st.markdown("NB: best viewed on a large screen.")
+
 @st.cache_data
 def load_ward_data():
     data = gpd.read_file(GEOJSON_PATH)
