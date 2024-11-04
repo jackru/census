@@ -9,6 +9,16 @@ DELTAS_PATH = 'ward_delta_strings.geojson'
 st.set_page_config(page_title='Census data by ward 2021',
                    page_icon='https://storage.mlcdn.com/account_image/293832/H3etpcTDIeoZhChu7cYp9RkbGecqwFM8aYZLhbWb.png')
 
+st.markdown("""
+    <script>
+    const width = window.innerWidth;
+    const url = new URL(window.location);
+    url.searchParams.set("width", width);
+    window.history.pushState({}, "", url);
+    </script>
+""", unsafe_allow_html=True)
+
+st.query_params
 
 st.header('Northern Ireland Census 2021: Religious mix by ward')
 
