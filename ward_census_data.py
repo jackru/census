@@ -40,9 +40,15 @@ age_band = st.selectbox(
     gdf['AgeBand'].unique(),
 )
 
+@st.cache_data
+def get_age_band_data(age_band):
+    return gdf[gdf['AgeBand'] == age_band]
+
+age_band_data = get_age_band_data(age_band)
+
 rel_layer = pdk.Layer(
     'GeoJsonLayer',
-    gdf[gdf['AgeBand'] == age_band],
+    age_band_data,
     opacity=0.8,
     stroked=True,
     filled=True,
