@@ -41,8 +41,8 @@ age_band = st.selectbox(
 )
 
 @st.cache_data
-def get_age_band_data(age_band):
-    return gdf[gdf['AgeBand'] == age_band]
+def get_age_band_data(band):
+    return gdf[gdf['AgeBand'] == band]
 
 age_band_data = get_age_band_data(age_band)
 
